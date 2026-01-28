@@ -130,7 +130,7 @@ class Config:
     # 实时行情开关（关闭后使用历史收盘价进行分析）
     enable_realtime_quote: bool = True
     # 筹码分布开关（该接口不稳定，云端部署建议关闭）
-    enable_chip_distribution: bool = False
+    enable_chip_distribution: bool = True
     # 实时行情数据源优先级（逗号分隔）
     realtime_source_priority: str = "akshare_sina,tencent,efinance,akshare_em"
     # 实时行情缓存时间（秒）
