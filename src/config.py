@@ -362,7 +362,7 @@ class Config:
             discord_bot_status=os.getenv('DISCORD_BOT_STATUS', 'A股智能分析 | /help'),
             # 实时行情增强数据配置
             enable_realtime_quote=os.getenv('ENABLE_REALTIME_QUOTE', 'true').lower() == 'true',
-            enable_chip_distribution=os.getenv('ENABLE_CHIP_DISTRIBUTION', 'true').lower() == 'true',
+            enable_chip_distribution=os.getenv('ENABLE_REALTIME_QUOTE', 'true').lower() == 'true',
             # 实时行情数据源优先级：
             # - akshare_sina/tencent: 单股票直连查询，轻量级，推荐放前面
             # - efinance/akshare_em: 全量拉取，数据丰富但负载大
